@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS Course
     id VARCHAR (10) PRIMARY KEY NOT Null,
     name VARCHAR(60),
     textbook VARCHAR(100),
+    author VARCHAR(100),
     credits INT,
     is_active VARCHAR(10),
     department_id INT,
