@@ -9,8 +9,8 @@ outOfOrder = true
 schemaModelLocation = "schema-model"
 validateMigrationNaming = true
 
-[flyway.check]
-majorTolerance = 0
+  [flyway.check]
+  majorTolerance = 0
 
 [flywayDesktop]
 developmentEnvironment = "development"
@@ -21,3 +21,9 @@ filterFile = "filter.rgf"
 
 [redgateCompare.postgresql.options.ignores]
 ignoreNewlinesInTextObjects = "off"
+
+[environments.UniversityDB]
+url = "jdbc:postgresql://localhost:5432/University"
+schemas = [ "public" ]
+
+flyway.baselineOnMigrate=true

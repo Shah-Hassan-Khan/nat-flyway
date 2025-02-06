@@ -12,7 +12,7 @@ SET SCHEMA 'public';
 
 -- Create Tables
 
-CREATE TABLE Department
+CREATE TABLE IF NOT EXISTS Department
 (
     id INT PRIMARY KEY NOT Null,
     name VARCHAR (50),
@@ -20,7 +20,7 @@ CREATE TABLE Department
     UNIQUE (id)
 );
 
-CREATE TABLE Student
+CREATE TABLE IF NOT EXISTS Student
 (
     id INT PRIMARY KEY NOT null,
     name VARCHAR (60),
@@ -33,7 +33,7 @@ CREATE TABLE Student
 );
 
 
-CREATE TABLE Course
+CREATE TABLE IF NOT EXISTS Course
 (
     id VARCHAR (10) PRIMARY KEY NOT Null,
     name VARCHAR(60),
